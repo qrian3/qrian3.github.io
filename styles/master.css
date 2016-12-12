@@ -1,0 +1,347 @@
+/* General CSS */
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	font-family: 'Source Sans Pro', sans-serif;
+	background: url(grouse-grind.jpg) no-repeat center center; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+@media (min-width: 768px) {
+	body {
+		background: url(grouse-grind.jpg) no-repeat center center; 
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+}
+
+@media (min-width: 996px) {
+	body {
+		/*background-size: 100% 100%;*/
+	}
+}
+
+.fixed {
+	position: fixed;
+}
+
+.margin-bottom-none {
+	margin-bottom: 0 !important;
+}
+
+
+/* Navbar */
+.navbar {
+	background: rgba(255, 255, 255, 1) !important;
+	min-height: 65px;
+}
+
+.navbar-nav {
+	width: 100% !important;
+	text-align:center !important;
+}
+
+.navbar-nav li {
+	float: none;
+	display: inline-block;
+}
+
+.navbar-nav li a {
+	line-height: 65px;
+	height: 65px;
+	padding-top: 0;
+	color: #678 !important;
+	z-index: 1000;
+	font-size: 1.3em;
+	/*text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;*/
+}
+
+@media (min-width: 768px) {
+	.navbar-nav li a {
+		color: #678 !important;
+	}
+
+	.navbar-brand-text {
+		padding-left: 15px;
+	}
+}
+
+
+
+
+/* General Viewport setting */
+@media (min-width: 970px) {
+	.container-fluid {
+		max-width: 970px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.container-fluid {
+		max-width: 1200px;
+	}
+}
+
+
+/* main specific */
+#main {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+}
+
+#main p {
+	color: white;
+	font-weight: 600;
+	line-height: 1.3em;
+}
+
+#main .main-header {
+	font-size: 2.5em;
+	margin-bottom: 0.5em;
+	/*text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;*/
+}
+
+#main .sub-header {
+	font-weight: 300;
+	font-size: 2em;
+	margin-bottom: 0.75em;
+	/*text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;*/
+}
+
+@media (min-width: 768px) {
+	#main .main-header {
+		font-size: 3em;
+	}
+
+	#main .sub-header {
+		font-size: 2em;
+	}
+
+	.form-group {
+		width: 100%;
+	}
+}
+
+@media (min-width: 970px) {
+	#main .main-header {
+		font-size: 3em;
+	}
+
+	#main .sub-header {
+		font-size: 2em;
+	}
+}
+
+@media (min-width: 1200px) {
+	#main .main-header {
+		font-size: 4em;
+	}
+	#main .sub-header {
+		font-size: 2.5em;
+	}
+}
+
+/* Content-specific */
+.main-header {
+	font-size: xx-large;
+	line-height: 50px;
+	font-weight: 400;
+	margin: 0;
+}
+
+.main-small-header {
+	font-size: large;
+	line-height: 30px;
+	font-weight: 400;
+	margin: 0;
+}
+
+.sub-header {
+	font-size: large;
+	line-height: 30px;
+	font-weight: 300;
+	margin: 0;
+	color: #678;
+}
+
+div.profile-header-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+div.profile-container{
+	margin: 3em;
+}
+
+.carousel-inner > .item > img{
+	display: block;
+	max-height: 400px;
+	margin: auto;
+	width: auto;
+    height: auto;
+}
+
+#work-experience{
+	background-image:;
+	padding: 30px 0 30px 0;
+	margin: 0;
+}
+
+#education{
+	padding: 30px 0 30px 0;
+	margin: 0;
+}
+
+#footer {
+	margin-top: 2em;
+}
+
+#footer p {
+	color: grey;
+}
+
+
+/* Flexbox related */
+
+.flex-container {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	flex-wrap: wrap;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	align-items: center;
+}
+
+.flex-container .logo {
+	width: 20%;
+	margin: 1em 1em;
+}
+
+.flex-container .member-logo {
+	display: inline-block;
+	margin: 10px 0 10px 2%;
+	padding: 0.5em;
+	width: calc(100% * (1/4) - 10px - 1px);
+	-webkit-filter: grayscale(100%) opacity(60%); /* Chrome, Safari, Opera */
+    filter: grayscale(100%) opacity(60%);
+}
+
+@media (min-width: 581px) {
+	.flex-container .member-logo {
+		display: inline-block;
+		margin: 10px 0 10px 2%;
+		width: calc(100% * (1/5) - 10px - 1px);
+	}
+}
+
+.flex-container {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	flex-wrap: wrap;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	align-items: center;
+}
+
+.flex-container-column {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	flex-wrap: wrap;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.overlay-container {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+	height: 3.5em;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	z-index: 999;
+}
+
+.overlay-container-right-justify {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+	height: 3.5em;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-justify-content: flex-end;
+	justify-content: flex-end;
+	z-index: 999;
+}
+
+/* Horizontal line */
+/*
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #007EE5 ;
+	border-radius: 1px;
+	margin: 2em 0;
+}
+
+ .header-underline {
+	padding: 0em !important;
+    margin: 0em !important;
+}
+
+.short-line {
+	margin: 0em 0em 1em 0em;
+}
+
+.short-line:after {
+	content: '';
+	position: absolute;
+	width: 5%;
+	height: 1px;
+    left: 47.5%;
+    border-bottom: 1px solid #007EE5;
+}
+*/
+
+
+
+
+
+
+
+
+
