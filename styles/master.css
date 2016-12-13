@@ -94,7 +94,9 @@ body {
 /* main specific */
 #main {
 	min-height: 100%;
-	height: inherit !important;
+	height: auto !important;
+	height: 100%;
+	margin-bottom: 5%;
 }
 
 #main p {
